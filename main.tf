@@ -1,5 +1,5 @@
 resource "random_string" "random" {
-  length           = 18
+  length           = 16
 }
 
 output "res" {
