@@ -1,5 +1,9 @@
 resource "random_string" "random" {
-  length           = 17
+  length           = 18
+
+  provisioner "local-exec" {
+    command = "sleep 3600"
+  }
 }
 
 output "res" {
