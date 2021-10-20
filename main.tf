@@ -14,7 +14,7 @@ resource "google_compute_subnetwork" "default" {
   private_ip_google_access = true 
 }*/
   
-resource "google_compute_instance" "default" {
+resource "google_compute_instance" "default2" {
   name         = var.instance_name
   machine_type = "n1-standard-1"
   zone         = "us-central1-a"
