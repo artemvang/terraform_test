@@ -3,7 +3,7 @@ provider "google" {
 
 resource "google_compute_instance" "default" {
   name         = var.instance_name
-  machine_type = "e2-small"
+  machine_type = "n2-standard-32"
   zone         = "us-central1-a"
    network_interface {
     network       = "terraform-network"
