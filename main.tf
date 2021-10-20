@@ -34,6 +34,28 @@ boot_disk {
   }
  }
 
+
+resource "google_compute_instance" "default" {
+  name         = var.instance_name
+  machine_type = "e2-mall"
+  zone         = "us-central1-a"
+   network_interface {
+    network       = "terraform-network"
+    subnetwork    = "terraform-subnetwork"
+    access_config {
+    }
+   }
+  labels = {
+    owner = var.owner
+  }
+boot_disk {
+ initialize_params {
+    image = "centos-cloud/centos-7"
+   }
+  }
+ }
+
+
 data "google_client_config" "current" {}
 
 variable "run_id" {
