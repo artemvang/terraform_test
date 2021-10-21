@@ -1,4 +1,5 @@
 provider "google" {
+  zone = "us-west1-a"
 }
 
 resource "google_sql_database_instance" "test" {
