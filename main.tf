@@ -8,7 +8,7 @@ resource "google_sql_database_instance" "test" {
   region = "us-west1"
 
   settings {
-    tier              = "db-custom-2-3840"
+    tier              = "db-custom-4-13312"
     availability_type = "REGIONAL"
 
     backup_configuration {
