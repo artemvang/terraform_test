@@ -9,7 +9,7 @@ resource "google_sql_database_instance" "test" {
 
   settings {
     tier              = "db-custom-8-13312"
-    availability_type = "REGIONAL"
+    availability_type = var.test.name
 
     backup_configuration {
       enabled = false
