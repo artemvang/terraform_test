@@ -1,3 +1,3 @@
 variable "test" {
-  default = "aweawewaeaweawe
+  default = "aweawewaeaweawe"
 }
