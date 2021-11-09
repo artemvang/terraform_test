@@ -1,8 +1,8 @@
 provider "google" {
 }
 
-resource "google_sql_database_instance" "test {
-  provider         = google-beta
+resource "google_sql_database_instance" "test" {
+  provider         = google-bet
   name             = "test-db-kek"
   database_version = "POSTGRES_13"
   region = "us-west1"
