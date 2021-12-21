@@ -3,7 +3,7 @@ provider "google" {
 
 resource "google_sql_database_instance" "test" {
   provider         = google-beta
-  name             = "test-db-keks"
+  name             = "test-db-kekss"
   database_version = "POSTGRES_13"
   region = "us-west1"
 
