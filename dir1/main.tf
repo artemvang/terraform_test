@@ -3,7 +3,7 @@ variable "run_id" {
   sensitive = true
 }
 variable "sleep_time" {
-  default = 125
+  default = 60
 }
 resource "random_integer" "ff55cout0129timeout0123456789timeout0123456789timeout0123456789" {
   count = 30
