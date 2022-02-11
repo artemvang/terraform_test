@@ -1,4 +1,4 @@
 resource "random_id" "server" {
   count = 10
-  byte_length = 16
+  byte_length = 32
 }
