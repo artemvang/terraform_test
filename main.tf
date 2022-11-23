@@ -1,6 +1,11 @@
+terraform {
+  backend "s3" {
+    bucket = "mybucket"
+    key    = "path/to/my/key"
+    region = "us-east-1"
+  }
+}
 
-resource "random_integer" "ff55cout0129timeout0123456789timeout0123456789timeout0123456789" {
-  count = 30
-  min = 32
-  max = 180
+resource "random_id" "server" {
+  byte_length = 8
 }
